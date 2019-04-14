@@ -1,19 +1,109 @@
 body {
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 .content {
     background-image: url("../img/Background1.svg");
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    position: relative;
 }
+
+
 #Skyline {
     background-image: url("../img/Skyline.svg");
     height: 287px;
 }
-#Buildings {
+#Frame {
     background-image: url("../img/Frame.svg");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+
+
     height: 567px;
+}
+#Ground {
+    background-image: url("../img/Ground.svg");
+    height: 275px;
+}
+
+
+
+
+
+
+
+#Cloud2 {
+    width: 8.375vw;
+}
+#Cloud4 {
+    width: 14.875vw;
+}
+#Cloud3 {
+    width: 10.3125vw;
+}
+#Cloud2-1 {
+    width: 12.375vw;
+}
+#logo {
+    width: 3.875vw;
+}
+
+
+
+
+
+
+
+/* Position backgrounds */
+#Skyline {
+    position: relative;
+    top: -10%;
+}
+#Frame {
+    position: relative;
+    top: -30%;
+    z-index: 1;
+}
+#Ground {
+    position: relative;
+    top: -50%;
+    z-index: 1;
+}
+
+
+
+
+
+
+/* Position clouds */
+#logo {
+    position: absolute;
+    top: 28%;
+    left: 1%;
+}
+#Cloud2 {
+    position: absolute;
+    top: 60%;
+    left: 1%;
+
+}
+#Cloud4 {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+}
+#Cloud2-1 {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+}
+#Cloud3 {
+    position: absolute;
+    transform: translateX(50%);
+    top: 30%;
+    right: 50%;
 }
