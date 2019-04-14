@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    background-image: url("../img/Background1.svg");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+#Skyline {
+    background-image: url("../img/Skyline.svg");
+    height: 287px;
+}
+#Buildings {
+    background-image: url("../img/Frame.svg");
+    background-size: cover;
+    height: 567px;
+}
