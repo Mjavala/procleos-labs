@@ -12,6 +12,7 @@ body {
 }
 
 
+/* SVGs as backgrounds */
 #Skyline {
     background-image: url("../img/Skyline.svg");
     height: 287px;
@@ -35,7 +36,7 @@ body {
 
 
 
-
+/* Size clouds */
 #Cloud2 {
     width: 8.375vw;
 }
@@ -79,7 +80,7 @@ body {
 
 
 
-/* Position clouds */
+/* Position log + clouds */
 #logo {
     position: absolute;
     top: 28%;
