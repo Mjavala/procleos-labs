@@ -1,7 +1,7 @@
 let laptopContent = document.getElementById('laptopContent');
 let mobileContent = document.getElementById('mobileContent');
 
-if (window.innerWidth <= 545) {
+if (window.innerWidth <= 600) {
 
     // laptopContent.style.visibility = "hidden";
     // mobileContent.style.visibility = "visible";
@@ -24,7 +24,7 @@ if (window.innerWidth <= 545) {
 window.addEventListener('resize', function() {
 
 
-    if (window.innerWidth <= 545) {
+    if (window.innerWidth <= 600) {
 
         laptopContent.style.display = "none";
         mobileContent.style.display = "block";
