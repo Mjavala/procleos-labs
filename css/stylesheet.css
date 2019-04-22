@@ -2,3 +2,17 @@ html, body {
     margin: 0;
     padding: 0;
 }
+/* #text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 3.5s steps(30, end);
+}
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+
+} */
