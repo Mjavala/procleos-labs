@@ -1,14 +1,14 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: salmon;
+    background: rgb(0, 154, 249);
     font-size: 16px;
 }
 textarea:focus, input:focus {
     outline: none;
 }
 .fadeOut {
-    animation: fadeOut 1s forwards;
+    animation: fadeOut 0.5s forwards;
 }
 @keyframes fadeOut {
     0% {
@@ -19,24 +19,37 @@ textarea:focus, input:focus {
     }
 }
 
-
-#textEntryField {
+#textEntryFieldWrapper {
     background-color: rgb(255, 255, 255, 0.25);
-    border-radius: 40px;
+    display: block;
     width: 640px;
     padding: 8px 0;
-    font-size: 22px;
     margin: 0 auto;
-    display: block;
+    border-radius: 40px;
     visibility: hidden;
+}
+#textEntryFieldWrapper {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#textEntryField {
     border: 0;
+    font-size: 1.6vw;
+    background-color: rgb(255, 255, 255, 0);
+    margin-left: 40px;
+    width: 560px;
 }
 #textEntryField::placeholder {
     color: rgb(255, 255, 255, 0.5);
-    padding-left: 40px;
 }
 
 
+
+input[type=text] {
+    color: rgb(255, 255, 255, 0.5);
+}
 
 
 /* .fadeIn {
