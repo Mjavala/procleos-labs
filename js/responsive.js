@@ -1,22 +1,16 @@
-let textEntryFieldWrapper = document.getElementById('textEntryFieldWrapper');
-
 // Reponsive text entry field.
-function getCoords(elem) {
-    let box = elem.getBoundingClientRect();
 
-    return {
-        top: box.top + pageYOffset,
-        left: box.left + pageXOffset
-    };
-}
 
+// Set the top of the selected element to (the given top value + pageYOffset).
 function setTop(elem, topValue) {
     elem.style.top = topValue + pageYOffset + "px";
 }
 
+// Set the width value of the selected element to the given width value.
 function setWidth(elem, widthValue) {
     elem.style.width = widthValue + "px";
 }
+
 
 setTop(textEntryFieldWrapper, rect.getBoundingClientRect().top);
 if (window.innerWidth < 1536) {

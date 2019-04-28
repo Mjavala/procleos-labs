@@ -4,8 +4,6 @@ let yes = document.getElementById('Yes');
 
 
 let textEntryFieldWrapper = document.getElementById('textEntryFieldWrapper');
-
-
 // OnClick of the button.
 rect.addEventListener('click', function() {
     fadeOutText.classList.add('fadeOut');
