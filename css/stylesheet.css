@@ -4,6 +4,9 @@ html, body {
     background: rgb(0, 154, 249);
     font-size: 16px;
 }
+input[type=text] {
+    color: rgb(255, 255, 255, 0.5);
+}
 textarea:focus, input:focus {
     outline: none;
 }
@@ -19,47 +22,96 @@ textarea:focus, input:focus {
     }
 }
 
+
+
+
 #textEntryFieldWrapper {
-    background-color: rgb(255, 255, 255, 0.25);
-    display: block;
-    width: 640px;
-    padding: 8px 0;
-    margin: 0 auto;
-    border-radius: 40px;
     visibility: hidden;
 }
-#textEntryFieldWrapper {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-}
 
-#textEntryField {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Second form */
+#secondTextEntryFieldWrapper {
+    background-color: rgb(255, 255, 255, 0.25);
+    padding: 8px 0;
+    border-radius: 40px;
+}
+#secondTextEntryField {
     border: 0;
     font-size: 1.6vw;
     background-color: rgb(255, 255, 255, 0);
     margin-left: 40px;
+}
+#secondTextEntryField::placeholder {
+    color: rgb(255, 255, 255, 0.5);
+}
+
+
+/* Before users typing their emails */
+
+.secondTextEntryFieldWrapperBefore {
+    width: 640px;
+}
+
+.secondTextEntryFieldBefore {
     width: 560px;
 }
-#textEntryField::placeholder {
-    color: rgb(255, 255, 255, 0.5);
+
+
+/* After users typing their emails */
+
+.secondTextEntryFieldWrapper {
+    margin-right: 5px;
+    width: 515px;
+}
+
+.secondTextEntryField {
+    width: 435px;
 }
 
 
 
-input[type=text] {
-    color: rgb(255, 255, 255, 0.5);
+
+
+
+
+
+
+
+
+
+#secondSendBtn {
+    border: 0;
+    font-size: 1.6vw;
+    background-color: #7F1BCE;
+    color: white;
+    border-radius: 40px;
+    padding: 8px 0;
+    width: 120px;
+    display: none;
 }
 
 
-/* .fadeIn {
-    animation: fadeIn 3s forwards;
+/* Flexbox CSS4 Layout */
+.flex-container {
+    display: flex;
+    justify-content: center;
 }
-@keyframes fadeIn {
-    0% {
-        visibility: hidden;
-    }
-    100% {
-        visibility: visible;
-    }
-} */
