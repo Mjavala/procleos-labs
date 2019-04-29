@@ -5,7 +5,7 @@ html, body {
     font-size: 16px;
 }
 input[type=text] {
-    color: rgb(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.25);
 }
 textarea:focus, input:focus {
     outline: none;
@@ -67,19 +67,19 @@ DESKTOP & TABLET SCREEN
 
 /* #secondTextEntryFieldWrapper is the Rectangle background with a round border at the corner. */
 #secondTextEntryFieldWrapper {
-    background-color: rgb(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.25);
     border-radius: 40px;
     padding: 8px 0px;
 }
 
 /* #secondTextEntryField is the actually input text that users enter their emails. */
 #secondTextEntryField {
-    background-color: rgb(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0);
     border: 0px;
     font-size: 1.6vw;
     margin-left: 40px;
 }
-#secondTextEntryField::placeholder { color: rgb(255, 255, 255, 0.5); }
+#secondTextEntryField::placeholder { color: rgba(255, 255, 255, 0.5); }
 
 /* #secondSendBtn is the SEND button. At the beginning, it is not shown. */
 #secondSendBtn {
