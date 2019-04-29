@@ -10,6 +10,12 @@ input[type=text] {
 textarea:focus, input:focus {
     outline: none;
 }
+
+/*
+OnClick of the CTA button styling.
+The CTA text fades out.
+The CTA button also fades out.
+----------------------------------------------------------------------------*/
 .fadeOut {
     animation: fadeOut 0.5s forwards;
 }
