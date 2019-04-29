@@ -26,7 +26,7 @@ textarea:focus, input:focus {
 
 
 #textEntryFieldWrapper {
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 
@@ -55,13 +55,13 @@ textarea:focus, input:focus {
 /* Second form */
 #secondTextEntryFieldWrapper {
     background-color: rgb(255, 255, 255, 0.25);
-    padding: 8px 0;
     border-radius: 40px;
+    padding: 8px 0px;
 }
 #secondTextEntryField {
-    border: 0;
-    font-size: 1.6vw;
     background-color: rgb(255, 255, 255, 0.1);
+    border: 0px;
+    font-size: 1.6vw;
     margin-left: 40px;
 }
 #secondTextEntryField::placeholder {
@@ -70,37 +70,21 @@ textarea:focus, input:focus {
 
 
 /* Before users typing their emails */
-
 .secondTextEntryFieldWrapperBefore {
     width: 640px;
 }
-
 .secondTextEntryFieldBefore {
     width: 560px;
 }
 
-
 /* After users typing their emails */
-
 .secondTextEntryFieldWrapper {
     margin-right: 5px;
     width: 515px;
 }
-
 .secondTextEntryField {
     width: 435px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 #secondSendBtn {
     border: 0;
@@ -108,14 +92,126 @@ textarea:focus, input:focus {
     background-color: #7F1BCE;
     color: white;
     border-radius: 40px;
-    padding: 8px 0;
+    padding: 9px 0px;
     width: 120px;
     display: none;
 }
 
 
-/* Flexbox CSS4 Layout */
+
+@media only screen and (max-width: 1200px) {
+    #secondTextEntryFieldWrapper {
+        padding: 6px 0px;
+    }
+    #secondTextEntryField {
+        margin-left: 20px;
+    }
+    #secondSendBtn {
+        padding: 8px 0px;
+        width: 100px;
+    }
+
+
+    /* Before users typing their emails */
+    .secondTextEntryFieldWrapperBefore {
+        width: 520px;
+    }
+    .secondTextEntryFieldBefore {
+        width: 480px;
+    }
+
+    /* After users typing their emails */
+    .secondTextEntryFieldWrapper {
+        margin-right: 5px;
+        width: 415px;
+    }
+    .secondTextEntryField {
+        width: 375px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    #secondTextEntryFieldWrapper {
+        padding: 4px 0px;
+    }
+    #secondTextEntryField {
+        margin-left: 20px;
+    }
+    #secondSendBtn {
+        padding: 6px 0px;
+        width: 80px;
+    }
+
+
+    /* Before users typing their emails */
+    .secondTextEntryFieldWrapperBefore {
+        width: 400px;
+    }
+    .secondTextEntryFieldBefore {
+        width: 360px;
+    }
+
+    /* After users typing their emails */
+    .secondTextEntryFieldWrapper {
+        margin-right: 5px;
+        width: 315px;
+    }
+    .secondTextEntryField {
+        width: 275px;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #secondTextEntryFieldWrapper {
+        padding: 3px 0px;
+    }
+    #secondTextEntryField {
+        margin-left: 10px;
+    }
+    #secondSendBtn {
+        padding: 4px 0px;
+        width: 60px;
+    }
+
+
+    /* Before users typing their emails */
+    .secondTextEntryFieldWrapperBefore {
+        width: 300px;
+    }
+    .secondTextEntryFieldBefore {
+        width: 280px;
+    }
+
+    /* After users typing their emails */
+    .secondTextEntryFieldWrapper {
+        margin-right: 5px;
+        width: 235px;
+    }
+    .secondTextEntryField {
+        width: 215px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Flexbox CSS3 Layout */
 .flex-container {
     display: flex;
     justify-content: center;
+}
+
+
+#secondTextEntryFieldWrapper {
+    display: flex;
+    align-items: center;
 }
