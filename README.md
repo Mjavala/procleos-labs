@@ -1,6 +1,6 @@
 # coming-soon-page
 ## Documentation.
-GitHub repository: https://github.com/doxuan994/coming-soon-page/tree/gh-pages
+GitHub repository: https://github.com/doxuan994/coming-soon-page/tree/gh-pages  
 Link to GitHub.io: https://doxuan994.github.io/coming-soon-page/index.html
 
 
