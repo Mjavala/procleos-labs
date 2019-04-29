@@ -93,9 +93,6 @@
                     <path id="Rectangle" opacity="0" fill="#7F1BCE" d="M878 997C878 980.431 891.431 967 908 967H1012C1028.57 967 1042 980.431 1042 997C1042 1013.57 1028.57 1027 1012 1027H908C891.431 1027 878 1013.57 878 997Z">
                         <animate id="RectangleAnimation" attributeName="opacity" values="0;1" fill="freeze" begin="textAnimation.end+0.2s" dur="2s" />
                     </path>
-
-
-
                     <path id="Yes" opacity="0" fill="white" d="M940.424 996.662L944.445 988.726H948.849L942.455 1000.5V1008H938.394V1000.63L932 988.726H936.43L940.424 996.662ZM962.375 1008H951.274V988.726H962.375V992.074H955.361V996.306H961.887V999.655H955.361V1004.62H962.375V1008ZM977.787 1002.65C977.787 1004.39 977.158 1005.76 975.901 1006.76C974.653 1007.76 972.913 1008.26 970.681 1008.26C968.624 1008.26 966.805 1007.88 965.223 1007.1V1003.31C966.523 1003.89 967.622 1004.3 968.519 1004.53C969.424 1004.77 970.25 1004.89 970.997 1004.89C971.894 1004.89 972.579 1004.72 973.054 1004.37C973.537 1004.03 973.779 1003.52 973.779 1002.85C973.779 1002.47 973.673 1002.13 973.462 1001.84C973.251 1001.54 972.939 1001.26 972.526 1000.99C972.122 1000.71 971.292 1000.28 970.035 999.681C968.857 999.127 967.974 998.596 967.385 998.086C966.796 997.576 966.326 996.983 965.974 996.306C965.623 995.629 965.447 994.838 965.447 993.933C965.447 992.228 966.022 990.888 967.174 989.912C968.334 988.937 969.934 988.449 971.973 988.449C972.975 988.449 973.928 988.567 974.833 988.805C975.748 989.042 976.701 989.376 977.694 989.807L976.376 992.984C975.348 992.562 974.495 992.268 973.818 992.101C973.15 991.934 972.491 991.85 971.841 991.85C971.067 991.85 970.474 992.03 970.061 992.391C969.648 992.751 969.441 993.221 969.441 993.801C969.441 994.162 969.525 994.478 969.692 994.75C969.859 995.014 970.123 995.273 970.483 995.528C970.852 995.774 971.718 996.223 973.08 996.873C974.882 997.734 976.117 998.6 976.785 999.47C977.453 1000.33 977.787 1001.39 977.787 1002.65ZM984.339 1001.61H981.122L980.45 988.726H985.011L984.339 1001.61ZM980.397 1006.11C980.397 1005.38 980.595 1004.82 980.99 1004.44C981.386 1004.06 981.961 1003.87 982.717 1003.87C983.447 1003.87 984.009 1004.07 984.405 1004.45C984.809 1004.84 985.011 1005.39 985.011 1006.11C985.011 1006.81 984.809 1007.36 984.405 1007.76C984 1008.16 983.438 1008.36 982.717 1008.36C981.979 1008.36 981.408 1008.16 981.003 1007.78C980.599 1007.38 980.397 1006.83 980.397 1006.11Z">
                         <animate id="yesAnimation" attributeName="opacity"values="0;1" begin="textAnimation.end+0.2s" fill="freeze" dur="2s" />
                     </path>
@@ -148,23 +145,27 @@
         </svg>
 
 
-
-        <div id="textEntryFieldWrapper" class="flex-container">
-            <div class="flex-item">
-                <div id="secondTextEntryFieldWrapper" class="secondTextEntryFieldWrapperBefore">
-                    <input id="secondTextEntryField" class="secondTextEntryFieldBefore" type="text" autocomplete="off" placeholder="What's your email address?">
+        <form action="https://formspree.io/doxuancntp@gmail.com" method="POST" />
+            <div id="textEntryFieldWrapper" class="flex-container">
+                <div class="flex-item">
+                    <div id="secondTextEntryFieldWrapper" class="secondTextEntryFieldWrapperBefore">
+                        <input id="secondTextEntryField" class="secondTextEntryFieldBefore" type="text" name="name" autocomplete="off" placeholder="What's your email address?">
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <input id="secondSendBtn" type="submit" value="SEND!">
                 </div>
             </div>
-            <div class="flex-item">
-                <input id="secondSendBtn" type="submit" value="SEND!">
-            </div>
-        </div>
-
+        </form>
 
 
 
 
     </div>
+
+
+
+
 
 
 
@@ -306,13 +307,11 @@
 
 
                 <path id="textMobile1">
-                    <animate id="first" attributeName="d" from="M70.6499 492.379 H70.6499" to="M70.6499 492.379 H299.845" dur="2.0s" begin="0.5s;second.end" fill="freeze"></animate>
+                    <animate id="first" attributeName="d" from="M70.6499 492.379 H70.6499" to="M70.6499 492.379 H299.845" dur="2.0s" begin="0.5s" fill="freeze"></animate>
                 </path>
                 <path id="textMobile2">
-                    <animate id="second" attributeName="d" from="M109.153 521.379 H109.153" to="M109.153 521.379 H255.712" dur="2.0s" begin="first.end"></animate>
+                    <animate id="second" attributeName="d" from="M109.153 521.379 H109.153" to="M109.153 521.379 H255.712" dur="2.0s" begin="first.end" fill="freeze"></animate>
                 </path>
-
-
 
                 <text font-size="19" font-family="Arial" fill="white" font-weight="bold">
                     <textPath xlink:href="#textMobile1">Want a cool logo, video,</textPath>
