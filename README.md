@@ -1,10 +1,11 @@
 # coming-soon-page
 ## Documentation.
+GitHub repository: https://github.com/doxuan994/coming-soon-page/tree/gh-pages
 Link to GitHub.io: https://doxuan994.github.io/coming-soon-page/index.html
 
 
 ### Copyright.
-Do not use any copy SVGs in this GitHub repository.
+Do not use any SVGs in this GitHub repository.
 This is private property belong to Procleos Labs Coming Soon Page (Apollo DAE).
 
 
@@ -21,8 +22,9 @@ One is used for DESKTOP & Table screen and one is used for MOBILE screen.
 (See js/script.js for more details).
 
 
-I USED INLINE SVG FOR RESPONSIVE WEBSITE!
-Forms is not included in the SVG because it is needed to submit data using https://formspree.io/ to send the email from the user.
+I USED INLINE SVG FOR RESPONSIVE WEBSITE! \
+Forms is not included in the SVG so for its responsive, check out the js/responsive.js and css/stylesheet.css.
+Also, https://formspree.io/ used to send the email from the user (Still working on this one).
 
 
 
@@ -42,7 +44,7 @@ Forms is not included in the SVG because it is needed to submit data using https
 
 
 
-### OnComplete
+### OnCompleted
 
 This website is responsive with both DESKTOP & TABLET and MOBILE.
 The responsive is quite nice but it is still needed more update.
@@ -80,7 +82,7 @@ The responsive is quite nice but it is still needed more update.
 
 
 #### Different between the DESKTOP & TABLET screen vs the MOBILE screen.
-1. Animated call to action (CTA) text.
+2. Animated call to action (CTA) text.
     - The DESKTOP & TABLET screen: animate one textPath.
         - textPath has the following styling attribute.
             - font-size="42"
@@ -95,6 +97,7 @@ The responsive is quite nice but it is still needed more update.
 
 3. Animated CTA button below CTA text currently works on only DESKTOP & TABLET screen.
 4. OnClick of the CTA button currently works on only DESKTOP & TABLET screen.
+5. After the user types their email, the send button appears below the text entry field, to the right currently works on only DESKTOP & TABLET screen.
 
 
 

@@ -30,6 +30,9 @@ window.addEventListener('resize', function() {
 
 
 
+// Tried to use JS for automatically resizing width of the text entry field but
+// it does not come out right so I used CSS for this task.
+// See stylesheet.css for more details.
 
 // Set the width value of the selected element to the given width value.
 // function setWidth(elem, widthValue) {
