@@ -17,7 +17,7 @@ This is private property belong to Procleos Labs Coming Soon Page (Apollo DAE).
 
 
 ### Description.
-SVG responsive website using 2 separately HTML in the same index.html.
+SVG responsive website using 2 separately HTML in the same index.html.  
 One is used for DESKTOP & Table screen and one is used for MOBILE screen (See js/script.js for more details).
 
 
