@@ -21,7 +21,7 @@ SVG responsive website using 2 separately HTML in the same index.html.
 One is used for DESKTOP & Table screen and one is used for MOBILE screen (See js/script.js for more details).
 
 
-I USED INLINE SVG FOR RESPONSIVE WEBSITE!
+I USED INLINE SVG FOR RESPONSIVE WEBSITE!  
 Forms is not included in the SVG so for its responsive, check out the js/responsive.js and css/stylesheet.css.  
 Also, https://formspree.io/ used to send the email from the user (Still working on this one).
 
