@@ -1,2 +1,2 @@
 # coming-soon-page
-# Document
+Document.
