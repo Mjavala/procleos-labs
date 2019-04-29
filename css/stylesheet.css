@@ -24,12 +24,15 @@ textarea:focus, input:focus {
 
 
 
-
+/*
+At the beginning, #textEntryFieldWrapper does not shown.
+Only show when users hit the CTA BUTTON
+------------------------------------------------------------------------------*/
 #textEntryFieldWrapper {
     visibility: hidden;
 }
 
-
+/* Center the text entry field. */
 #textEntryFieldWrapper {
     position: absolute;
     left: 50%;
@@ -48,44 +51,31 @@ textarea:focus, input:focus {
 
 
 
+/* ----------------------------------------------------------------------------
+
+DESKTOP & TABLET SCREEN
+
+----------------------------------------------------------------------------- */
 
 
 
-
-/* Second form */
+/* #secondTextEntryFieldWrapper is the Rectangle background with a round border at the corner. */
 #secondTextEntryFieldWrapper {
     background-color: rgb(255, 255, 255, 0.25);
     border-radius: 40px;
     padding: 8px 0px;
 }
+
+/* #secondTextEntryField is the actually input text that users enter their emails. */
 #secondTextEntryField {
     background-color: rgb(255, 255, 255, 0.1);
     border: 0px;
     font-size: 1.6vw;
     margin-left: 40px;
 }
-#secondTextEntryField::placeholder {
-    color: rgb(255, 255, 255, 0.5);
-}
+#secondTextEntryField::placeholder { color: rgb(255, 255, 255, 0.5); }
 
-
-/* Before users typing their emails */
-.secondTextEntryFieldWrapperBefore {
-    width: 640px;
-}
-.secondTextEntryFieldBefore {
-    width: 560px;
-}
-
-/* After users typing their emails */
-.secondTextEntryFieldWrapper {
-    margin-right: 5px;
-    width: 515px;
-}
-.secondTextEntryField {
-    width: 435px;
-}
-
+/* #secondSendBtn is the SEND button. At the beginning, it is not shown. */
 #secondSendBtn {
     border: 0;
     font-size: 1.6vw;
@@ -97,102 +87,70 @@ textarea:focus, input:focus {
     display: none;
 }
 
+/*
+Before users typing their emails.
+The Rectangle & input is longer.
+------------------------------------------------------------------------------*/
+.secondTextEntryFieldWrapperBefore { width: 640px; }
+.secondTextEntryFieldBefore        { width: 560px; }
+
+/*
+After users typing their emails.
+The Rectangle & input is shorter and the SEND button is shown.
+------------------------------------------------------------------------------*/
+.secondTextEntryFieldWrapper { margin-right: 5px; width: 515px; }
+.secondTextEntryField                           { width: 435px; }
+
+
+
 
 
 @media only screen and (max-width: 1200px) {
-    #secondTextEntryFieldWrapper {
-        padding: 6px 0px;
-    }
-    #secondTextEntryField {
-        margin-left: 20px;
-    }
-    #secondSendBtn {
-        padding: 8px 0px;
-        width: 100px;
-    }
+    #secondTextEntryFieldWrapper { padding: 6px 0px; }
+    #secondTextEntryField        { margin-left: 20px; }
+    #secondSendBtn               { padding: 8px 0px; width: 100px; }
 
 
-    /* Before users typing their emails */
-    .secondTextEntryFieldWrapperBefore {
-        width: 520px;
-    }
-    .secondTextEntryFieldBefore {
-        width: 480px;
-    }
+    /* Before users typing their emails. */
+    .secondTextEntryFieldWrapperBefore { width: 520px; }
+    .secondTextEntryFieldBefore        { width: 480px; }
 
-    /* After users typing their emails */
-    .secondTextEntryFieldWrapper {
-        margin-right: 5px;
-        width: 415px;
-    }
-    .secondTextEntryField {
-        width: 375px;
-    }
+    /* After users typing their emails. */
+    .secondTextEntryFieldWrapper { margin-right: 5px; width: 415px; }
+    .secondTextEntryField                           { width: 375px; }
 }
 
 
 @media only screen and (max-width: 900px) {
-    #secondTextEntryFieldWrapper {
-        padding: 4px 0px;
-    }
-    #secondTextEntryField {
-        margin-left: 20px;
-    }
-    #secondSendBtn {
-        padding: 6px 0px;
-        width: 80px;
-    }
+    #secondTextEntryFieldWrapper { padding: 4px 0px; }
+    #secondTextEntryField        { margin-left: 20px; }
+    #secondSendBtn               { padding: 6px 0px; width: 80px; }
 
 
-    /* Before users typing their emails */
-    .secondTextEntryFieldWrapperBefore {
-        width: 400px;
-    }
-    .secondTextEntryFieldBefore {
-        width: 360px;
-    }
+    /* Before users typing their emails. */
+    .secondTextEntryFieldWrapperBefore { width: 400px; }
+    .secondTextEntryFieldBefore        { width: 360px; }
 
-    /* After users typing their emails */
-    .secondTextEntryFieldWrapper {
-        margin-right: 5px;
-        width: 315px;
-    }
-    .secondTextEntryField {
-        width: 275px;
-    }
+    /* After users typing their emails. */
+    .secondTextEntryFieldWrapper { margin-right: 5px; width: 315px; }
+    .secondTextEntryField                           { width: 275px; }
 }
 
 
 
 @media only screen and (max-width: 600px) {
-    #secondTextEntryFieldWrapper {
-        padding: 3px 0px;
-    }
-    #secondTextEntryField {
-        margin-left: 10px;
-    }
-    #secondSendBtn {
-        padding: 4px 0px;
-        width: 60px;
-    }
+    #secondTextEntryFieldWrapper { padding: 3px 0px; }
+    #secondTextEntryField        { margin-left: 10px; }
+    #secondSendBtn               { padding: 4px 0px; width: 60px; }
 
 
-    /* Before users typing their emails */
-    .secondTextEntryFieldWrapperBefore {
-        width: 300px;
-    }
-    .secondTextEntryFieldBefore {
-        width: 280px;
-    }
+    /* Before users typing their emails. */
+    .secondTextEntryFieldWrapperBefore { width: 300px; }
+    .secondTextEntryFieldBefore        { width: 280px; }
 
-    /* After users typing their emails */
-    .secondTextEntryFieldWrapper {
-        margin-right: 5px;
-        width: 235px;
-    }
-    .secondTextEntryField {
-        width: 215px;
-    }
+    /* After users typing their emails. */
+    .secondTextEntryFieldWrapper { margin-right: 5px; width: 235px; }
+    .secondTextEntryField        { width: 215px; }
 }
 
 
@@ -205,12 +163,13 @@ textarea:focus, input:focus {
 
 
 /* Flexbox CSS3 Layout */
+/* I used this for putting the Rectangle & input & Send button in the same line and centered them. */
 .flex-container {
     display: flex;
     justify-content: center;
 }
 
-
+/* This is only to vertical centered the text entry field input inside the Rectangle background. */
 #secondTextEntryFieldWrapper {
     display: flex;
     align-items: center;
