@@ -4,6 +4,8 @@ let emailForm = document.getElementById('emailForm');
 let fadeOutTextCookie = document.getElementById('fadeOutText');
 let ctaBtnCookie = document.getElementById('ctaBtn');
 
+let fadeOutText2 = document.getElementById('fadeOutText2');
+
 
 function setCookies(cname, value) {
     document.cookie = cname + "=" + value;
@@ -44,6 +46,7 @@ function textIn6Appear() {
     if (getCookie('sent') >= 1) {
         fadeOutTextCookie.style.display = 'none';
         ctaBtnCookie.style.display = 'none';
+        fadeOutText2.style.display = "block";
     }
 }
 window.onload = function() {

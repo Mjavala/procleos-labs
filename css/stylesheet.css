@@ -30,6 +30,12 @@ The CTA button also fades out.
 
 
 
+#fadeOutText2 {
+    display: none;
+}
+
+
+
 /*
 At the beginning, #textEntryFieldWrapper does not shown.
 Only show when users hit the CTA BUTTON
