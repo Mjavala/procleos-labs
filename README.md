@@ -71,6 +71,18 @@ The responsive is quite nice but it is still needed more update.
 
 5. After the user types their email, the send button appears below the text entry field, to the right (See js/userAnimation.js for more details).
 
+6. After the user hits send, the page redirect to Formspree reCAPTCHA page. When users are not a robot, redirect back to the original page.
+Here the text entry field animates out (animate to a point) and the following text appears: Let's build something wonderful! ❤️.
+
+7. About 1s after the text in 6 appears, the link with text ‘re-send form’, appears below the text.
+
+8. A variable called 'sent’ indicating the form is sent is saved (updated) on a cookie. Have it set to 0 and increment it by 1 every time the form is sent. When the page loads, the JS should read the cookie and if sent >= 1, the text in 6 and 7 is on the page. Else, execute sequence in steps 2-5.
+
+9. When the user clicks 're-send form’:
+    - The 're-send form’ link animates to the text entry field described in 4b
+    - The text above it, described in 6. fades away simultaneously.
+    - Steps 4-8 are followed.
+
 
 
 #### What have done in the MOBILE screen.
