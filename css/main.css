@@ -1,0 +1,100 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #01B4FD;
+    overflow: hidden;
+    font-size: 16px;
+}
+img { width: 100%; height: 100%; }
+
+.big   { display: block; }
+.small { display: none; }
+
+/*
+Parents
+
+----------------------------------------------------------------------------- */
+#page           { height: 100vh; }
+#skylineWrapper { height: 20vh; }
+#frameWrapper   { height: 50vh; }
+#groundWrapper  { height: 30vh; }
+
+
+#skylineWrapper {
+    background-image: url("../img/Skyline.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+#frameWrapper   { position: relative; }
+#groundWrapper  { position: relative; }
+
+
+
+/*
+Children
+
+----------------------------------------------------------------------------- */
+.frameInner {
+    height: 135%;
+    width: 75%;
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#ground { position: relative; z-index: 1; }
+
+
+
+
+
+
+/*
+Baby Children
+
+----------------------------------------------------------------------------- */
+#ctaTxtWrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+#ctaBtnWrapper {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+#ctaBtn {
+    background-color: #7F1BCE;
+    border: 0px;
+    border-radius: 50px;
+    padding: 0.6em 2em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+/*
+Breakpoints
+
+----------------------------------------------------------------------------- */
+@media only screen and (max-width: 1300px) {
+    .frameInner { height: 100%; }
+}
+/* Extra small devices (phones, less than 768px) */
+@media only screen and (max-width: 768px) {
+    .frameInner { height: 70%; width: 100%; }
+    #ctaTxtWrapper { top: 33%; }
+    #ctaBtnWrapper { top: 80%; }
+}
