@@ -8,7 +8,7 @@
 /*
 Cursor Styling
 ----------------------------------------------------------------------------- */
-
+.cursor { display: none; }
 .cursor::after {
     content: '';
     display: inline-block;
