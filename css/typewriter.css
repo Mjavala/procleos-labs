@@ -1,16 +1,5 @@
-#ctaTxtWrapper,
-#txtIn6
-{
-    text-align: center;
-    font-family: monospace;
-    color: white;
-}
-
-#ctaTxtWrapper p,
-#txtIn6 p
-{
-    font-size: 2em; margin: 0; line-height: 1;
-}
+#ctaTxtWrapper, #txtIn6 { text-align: center; font-family: Arial; font-weight: bold; color: white; }
+#ctaTxtWrapper p, #txtIn6 p { font-size: 2em; margin: 0; line-height: 1; }
 
 /*
 Cursor Styling
@@ -28,12 +17,7 @@ Cursor Styling
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
 }
-#ctaTxtWrapper p.cursor::after,
-#txtIn6 p.cursor::after,
-{
-    height: 24px;
-    width: 12px;
-}
+#ctaTxtWrapper p.cursor::after, #txtIn6 p.cursor::after, { height: 24px; width: 12px; }
 
 
 
@@ -44,23 +28,15 @@ Breakpoints
 
 /* Extra small devices (phones, less than 768px) */
 @media only screen and (max-width: 768px) {
-    #ctaTxtWrapper p,
-    #txtIn6 p
-    {
-        font-size: 1.6em;
-        line-height: 1.2;
-        padding: 0 2em;
-    }
-    #ctaTxtWrapper p.cursor::after,
-    #txtIn6 p.cursor::after
-    {
-        height: 20px;
-        width: 10px;
-    }
+    #ctaTxtWrapper p, #txtIn6 p { font-size: 1.6em; line-height: 1.2; padding: 0 2em; }
+    #ctaTxtWrapper p.cursor::after, #txtIn6 p.cursor::after { height: 20px; width: 10px; }
 }
 
 
-
+/* Mobile screen */
+@media only screen and (max-width: 480px) {
+    #ctaTxtWrapper p, #txtIn6 p { font-size: 1.4em; line-height: 1.2; padding: 0 1.2em; }
+}
 
 
 
