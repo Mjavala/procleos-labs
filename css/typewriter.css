@@ -1,9 +1,16 @@
-#ctaTxtWrapper {
+#ctaTxtWrapper,
+#txtIn6
+{
     text-align: center;
     font-family: monospace;
     color: white;
 }
-#ctaTxtWrapper p { font-size: 2em; margin: 0; line-height: 1; }
+
+#ctaTxtWrapper p,
+#txtIn6 p
+{
+    font-size: 2em; margin: 0; line-height: 1;
+}
 
 /*
 Cursor Styling
@@ -21,7 +28,9 @@ Cursor Styling
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
 }
-#ctaTxtWrapper p.cursor::after {
+#ctaTxtWrapper p.cursor::after,
+#txtIn6 p.cursor::after,
+{
     height: 24px;
     width: 12px;
 }
@@ -35,12 +44,16 @@ Breakpoints
 
 /* Extra small devices (phones, less than 768px) */
 @media only screen and (max-width: 768px) {
-    #ctaTxtWrapper p {
+    #ctaTxtWrapper p,
+    #txtIn6 p
+    {
         font-size: 1.6em;
         line-height: 1.2;
         padding: 0 2em;
     }
-    #ctaTxtWrapper p.cursor::after {
+    #ctaTxtWrapper p.cursor::after,
+    #txtIn6 p.cursor::after
+    {
         height: 20px;
         width: 10px;
     }

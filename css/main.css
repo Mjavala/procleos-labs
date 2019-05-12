@@ -93,6 +93,15 @@ Children
     justify-content: center;
 }
 
+#txtIn6 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+}
+
 /*
 Baby Children
 
@@ -103,7 +112,6 @@ Baby Children
     border-radius: 50px;
     padding: 0.8em 2.2em;
     color: white;
-    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -147,6 +155,7 @@ Baby baby Children
 DESKTOP & TABLET SCREEN
 
 ----------------------------------------------------------------------------- */
+
 
 /* Button animates to view 0.25s after CTA text animation is complete. */
 #ctaBtn     { display: none; }
@@ -192,10 +201,13 @@ Breakpoints
 }
 /* Extra small devices (phones, equal or less than 768px) */
 @media only screen and (max-width: 768px) {
-    .frameInner { height: 70%; width: 100%; }
-    #ctaTxtWrapper { top: 33%; }
-    #emailForm     { top: 65%; display: block; }
-    #ctaBtnWrapper { visibility: hidden; }
+    .frameInner             { height: 70%; width: 100%; }
+    #ctaTxtWrapper, #txtIn6 { top: 33%; }
+    #ctaBtnWrapper          { top: 65%; }
+    #emailForm              { top: 65%; }
+
+    #ctaBtn { padding: 0.5em 2em; }
+
 
     .txtEntryFieldWrapperBefore { width: 400px; }
     .txtEntryFieldBefore        { width: 360px; }
@@ -203,7 +215,6 @@ Breakpoints
     #txtEntryFieldWrapper { padding: 5px 0px; }
     #txtEntryField        { margin-left: 20px; }
     #sendBtn {
-        display: block;
         margin: 8px auto 0;
         padding: 8px 0px;
     }
