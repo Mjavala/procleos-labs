@@ -12,10 +12,10 @@ img  { width: 100%; }
 
 .site {
     height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    overflow: auto;
 }
 .first {
     flex-basis: 40%;
@@ -105,7 +105,7 @@ Breakpoints
 @media only screen and (max-width: 768px) {
     .first          { top: -14%; }
     .frameWrapper   { top: 24%; }
-    .logo           { top: 115px; }
+    .logo           { top: 100px; }
 }
 @media only screen and (max-width: 480px) {
 
