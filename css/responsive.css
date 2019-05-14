@@ -11,7 +11,7 @@ img  { width: 100%; }
 .first, .second, .third { transition: all 0.5s ease; }
 
 .site {
-    overflow: auto;
+    overflow: hidden;
     height: 100%;
     position: relative;
 
