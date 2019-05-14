@@ -15,38 +15,28 @@
 *
 *******************************************************************************/
 let i = 0;
+let textArray = ["Want a cool logo, video, website or app?", "Let's build something wonderful! ❤️."];
+
 function typeWriter(id, inputArray, elementIndex) {
     let idInput = document.getElementById(id);
-    let cursor = idInput.querySelector('.cursor');
-    cursor.style.display = 'inline-block';
-
     let firstline = idInput.querySelector('.firstline');
-    let aString = inputArray[elementIndex];
+    let txt = inputArray[elementIndex];
+
 
     // If full string hasn't yet been typed out, continue typing.
-    if (i < aString.length) {
-        firstline.innerText = firstline.innerText + aString.charAt(i);
+    if (i < txt.length) {
+        firstline.innerText += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100, id, inputArray, elementIndex);
     }
-    i++;
-
-    // Duration of 4s.
-    setTimeout(typeWriter, 100, id, inputArray, elementIndex);
 }
-
-
-
-
-
 /*******************************************************************************
 *
 * It depends on the cookie,
 * CTA text will show or
 * the text in number 6 shows.
 *
-*
-*
 ******************************************************************************/
-let textArray = ["Want a cool logo, video, website or app?", "Let's build something wonderful! ❤️."];
 function txtAppear() {
     let emailForm = document.getElementById('emailForm');
 
@@ -56,7 +46,7 @@ function txtAppear() {
     // Here the text entry field animates out (animate to a point) and
     // the following text appears: Let's build something wonderful! ❤️.
     if (getCookie('sent') >= 1) {
-        setTimeout(typeWriter, 500, 'txtIn6', textArray, 1);
+        setTimeout(typeWriter, 0, 'txtIn6', textArray, 1);
     } else {
         // Number 2
         // Animated call to action (CTA) text: Want a cool logo, video, website, or app?
@@ -99,7 +89,7 @@ function btnChangeColorandTxt() {
 
 function showBtn() {
     if (getCookie('sent') >= 1) {
-        setTimeout(btnChangeColorandTxt, 5000);
+        setTimeout(btnChangeColorandTxt, 4600);
     } else {
         setTimeout(btnAppear, 4250);
     }

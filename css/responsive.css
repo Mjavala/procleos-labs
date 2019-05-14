@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #01B4FD;
+}
+
+/* Full height viewport. */
+body { height: 100vh; }
+img  { width: 100%; }
+
+.first, .second, .third { transition: all 0.5s ease; }
+
+
+.site {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.first {
+    flex-basis: 40%;
+
+    position: relative;
+    top: -10%;
+}
+.second {
+    flex-basis: 25%;
+
+    position: relative;
+}
+.third {
+    flex-basis: 35%;
+
+
+    z-index: 2;
+}
+
+.first {
+    background-image: url('../images/Skyline.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.second {
+
+}
+.third {
+    background-image: url('../images/Ground.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+
+
+
+/*
+Wrappers
+
+----------------------------------------------------------------------------- */
+.frameWrapper {
+    width: 940px;
+    position: absolute;
+
+    top: -74%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.5s ease;
+}
+
+
+
+/*
+Elements
+
+----------------------------------------------------------------------------- */
+.logo {
+    position: relative;
+    top: 85px;
+    left: 10px;
+    width: 60px;
+}
+
+
+
+
+/*
+Breakpoints
+
+----------------------------------------------------------------------------- */
+/* Medium devices (992px and less). */
+@media only screen and (max-width: 992px) {
+    .frameWrapper {
+        max-width: 780px;
+        top: -50%;
+    }
+}
+
+/* Small devices (tablets, 768px and less) */
+@media only screen and (max-width: 768px) {
+    .first  { top: -14%; }
+    .third  { background-position: top left 24%; }
+
+
+    .frameWrapper {
+        max-width: 460px;
+        top: 20%;
+    }
+
+
+    .logo { top: 110px; }
+
+}
+
+
+
+/* Mobile screen */
+@media only screen and (max-width: 480px) {
+
+}

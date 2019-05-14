@@ -1,26 +1,5 @@
-#ctaTxtWrapper, #txtIn6 { text-align: center; font-weight: bold; color: white; }
+#ctaTxtWrapper, #txtIn6     { text-align: center; font-weight: bold; color: white; }
 #ctaTxtWrapper p, #txtIn6 p { font-size: 2em; margin: 0; line-height: 1; }
-
-/*
-Cursor Styling
------------------------------------------------------------------------------ */
-.cursor { display: none; }
-.cursor::after {
-    content: '';
-    display: inline-block;
-
-    margin-left: 3px;
-    background-color: white;
-
-
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-}
-#ctaTxtWrapper p.cursor::after, #txtIn6 p.cursor::after, { height: 24px; width: 12px; }
-
-
-
 /*
 Breakpoints
 
@@ -29,7 +8,6 @@ Breakpoints
 /* Extra small devices (phones, less than 768px) */
 @media only screen and (max-width: 768px) {
     #ctaTxtWrapper p, #txtIn6 p { font-size: 1.6em; line-height: 1.2; padding: 0 2em; }
-    #ctaTxtWrapper p.cursor::after, #txtIn6 p.cursor::after { height: 20px; width: 10px; }
 }
 
 
@@ -38,20 +16,10 @@ Breakpoints
     #ctaTxtWrapper p, #txtIn6 p { font-size: 1.4em; line-height: 1.2; padding: 0 1.2em; }
 }
 
-
-
-
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    49% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+/*
+Cursor Styling
+----------------------------------------------------------------------------- */
+.firstline::after {
+    content: '';
+    display: inline-block;
 }
