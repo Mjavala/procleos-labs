@@ -89,25 +89,30 @@ Breakpoints
 ----------------------------------------------------------------------------- */
 /* Medium devices (992px and less). */
 @media only screen and (max-width: 992px) {
+    .third  { background-position: top left 24%; }
+
+
+
     .frameWrapper {
         max-width: 780px;
-        top: -50%;
+        top: -44%;
     }
 }
 
 /* Small devices (tablets, 768px and less) */
 @media only screen and (max-width: 768px) {
     .first  { top: -14%; }
-    .third  { background-position: top left 24%; }
+
 
 
     .frameWrapper {
         max-width: 460px;
-        top: 20%;
+        top: 24%;
     }
 
+    .logo { top: 115px; }
 
-    .logo { top: 110px; }
+
 
 }
 
