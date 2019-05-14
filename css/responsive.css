@@ -16,6 +16,7 @@ img  { width: 100%; }
     flex-direction: column;
     flex-wrap: wrap;
     overflow: auto;
+    -webkit-overflow-scrolling: auto;
 }
 .first {
     flex-basis: 40%;
