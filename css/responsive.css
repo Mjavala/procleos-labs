@@ -48,12 +48,11 @@ Wrappers
 
 ----------------------------------------------------------------------------- */
 .frameWrapper {
-    width: 940px;
+    width: 990px;
     position: absolute;
 
-
+    left: 50%;
     transform: translate(-50%);
-    transition: all 0.5s ease;
 }
 /*
 Elements
@@ -92,20 +91,26 @@ Breakpoints
 Responsive
 
 ----------------------------------------------------------------------------- */
-.first        { top: -10%; }
-.frameWrapper { top: -74%; left: 50%; }
-.logo         { top: 85px; left: 10px;  }
+.first        { top: -85px; }
+.logo         { top: 100px; left: 15px;  }
+
+.frameWrapper { top: -150px; }
+
 /*
 Breakpoints
 
 ----------------------------------------------------------------------------- */
 @media only screen and (max-width: 992px) {
-    .frameWrapper  { top: -24%; }
+    .frameWrapper   { top: -80px; }
+    .third          { background-position: top left -100px; }
 }
 @media only screen and (max-width: 768px) {
-    .first          { top: -14%; }
-    .frameWrapper   { top: 24%; }
-    .logo           { top: 100px; }
+    .first          { top: -130px; }
+    .logo           { top: 140px; left: 10px;  }
+
+    .frameWrapper   { top: 44px; }
+
+    .third          { background-position: top left -200px; }
 }
 @media only screen and (max-width: 480px) {
 
