@@ -42,8 +42,6 @@ img  { width: 100%; }
 
 }
 .third {
-    background-color: #00A3FB;
-
     background-image: url('../images/Ground.svg');
     background-repeat: no-repeat;
     background-size: cover;
