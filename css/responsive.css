@@ -10,31 +10,25 @@ img  { width: 100%; }
 
 .first, .second, .third { transition: all 0.5s ease; }
 
-
 .site {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .first {
     flex-basis: 40%;
-
     position: relative;
-    top: -10%;
 }
 .second {
     flex-basis: 25%;
-
     position: relative;
 }
 .third {
     flex-basis: 35%;
-
-
     z-index: 2;
 }
-
 .first {
     background-image: url('../images/Skyline.svg');
     background-repeat: no-repeat;
@@ -49,10 +43,6 @@ img  { width: 100%; }
     background-size: cover;
     transition: all 0.5s ease;
 }
-
-
-
-
 /*
 Wrappers
 
@@ -61,64 +51,62 @@ Wrappers
     width: 940px;
     position: absolute;
 
-    top: -74%;
-    left: 50%;
+
     transform: translate(-50%);
     transition: all 0.5s ease;
 }
-
-
-
 /*
 Elements
 
 ----------------------------------------------------------------------------- */
 .logo {
     position: relative;
-    top: 85px;
-    left: 10px;
     width: 60px;
 }
+/*
+Breakpoints
+
+----------------------------------------------------------------------------- */
+@media only screen and (max-width: 992px) {
+    .frameWrapper { max-width: 780px; }
+}
+@media only screen and (max-width: 768px) {
+    .frameWrapper { max-width: 460px; }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /*
+Responsive
+
+----------------------------------------------------------------------------- */
+.first        { top: -10%; }
+.frameWrapper { top: -74%; left: 50%; }
+.logo         { top: 85px; left: 10px;  }
+/*
 Breakpoints
 
 ----------------------------------------------------------------------------- */
-/* Medium devices (992px and less). */
 @media only screen and (max-width: 992px) {
-    .third  { background-position: top left 24%; }
-
-
-
-    .frameWrapper {
-        max-width: 780px;
-        top: -44%;
-    }
+    .frameWrapper  { top: -24%; }
 }
-
-/* Small devices (tablets, 768px and less) */
 @media only screen and (max-width: 768px) {
-    .first  { top: -14%; }
-
-
-
-    .frameWrapper {
-        max-width: 460px;
-        top: 24%;
-    }
-
-    .logo { top: 115px; }
-
-
-
+    .first          { top: -14%; }
+    .frameWrapper   { top: 24%; }
+    .logo           { top: 115px; }
 }
-
-
-
-/* Mobile screen */
 @media only screen and (max-width: 480px) {
 
 }
