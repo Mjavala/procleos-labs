@@ -80,7 +80,7 @@ Breakpoints
 
 
 /* Mobile screen */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
 
     .first  { flex-basis: 35%; top: -40px; }
     .second { flex-basis: 30%; }
@@ -140,26 +140,30 @@ Breakpoints
 
 
 
+/* Landscape */
+@media only screen and (orientation: landscape) {
+    .first  { flex-basis: 30%; top: -20px; }
+    .second { flex-basis: 35%; }
+    .third  { flex-basis: 35%; }
+
+    .first  { background-image: url("../images/Skyline.svg"); }
+    .second {}
+    .third  { background-image: url('../images/Ground.svg'); }
+
+
+    .frameWrapper {
+        width: 320px;
+        position: absolute;
+
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .frameWrapper       { display: block; top: 5px; transition: all 0.5s ease; }
+    .frameWrapperMobile { display: none; }
 
 
 
-
-
-
-
-/*
-Responsive
-
------------------------------------------------------------------------------ */
-
-
-/*
-Breakpoints
-
------------------------------------------------------------------------------ */
-@media only screen and (max-width: 992px) {
-
-}
-@media only screen and (max-width: 768px) {
+    .logo { width: 30px; top: 25px; left: 5px; }
 
 }
