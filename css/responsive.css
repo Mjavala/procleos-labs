@@ -152,18 +152,18 @@ Breakpoints
 
 
     .frameWrapper {
-        width: 320px;
+        width: 500px;
         position: absolute;
 
         left: 50%;
         transform: translate(-50%);
     }
 
-    .frameWrapper       { display: block; top: 5px; transition: all 0.5s ease; }
+    .frameWrapper       { display: block; top: -40px; transition: all 0.5s ease; }
     .frameWrapperMobile { display: none; }
 
 
 
-    .logo { width: 30px; top: 25px; left: 5px; }
+    .logo { width: 40px; top: 25px; left: 5px; }
 
 }
