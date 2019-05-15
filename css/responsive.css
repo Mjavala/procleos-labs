@@ -19,14 +19,14 @@ img  { width: 100%; }
 
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 .first {
-    flex-basis: 40%;
+    flex-basis: 30%;
     position: relative;
+    z-index: 2;
 }
 .second {
-    flex-basis: 25%;
+    flex-basis: 35%;
     position: relative;
 }
 .third {
@@ -58,6 +58,9 @@ Wrappers
     left: 50%;
     transform: translate(-50%);
 }
+
+.frameWrapper       { display: block; }
+.frameWrapperMobile { display: none; }
 /*
 Elements
 
@@ -70,17 +73,40 @@ Elements
 Breakpoints
 
 ----------------------------------------------------------------------------- */
-@media only screen and (max-width: 992px) {
-    .frameWrapper { max-width: 780px; }
-}
+@media only screen and (max-width: 992px) {}
 @media only screen and (max-width: 768px) {
-    .frameWrapper { max-width: 460px; }
+
 }
 
 
+@media only screen and (max-width: 480px) {
+
+    .first  { flex-basis: 35%; top: -35px; }
+    .second { flex-basis: 30%; }
+    .third  { flex-basis: 35%; }
 
 
+    .first  { background-image: url("../images/MobileSkyline.svg"); }
+    .second {}
+    .third  { background-image: url("../images/MobileGround.svg"); }
 
+
+    .frameWrapperMobile {
+        width: 100%;
+        max-width: 340px;
+        min-width: 320px;
+        position: absolute;
+
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .frameWrapper           { display: none; }
+    .frameWrapperMobile     { display: block; }
+
+    .logo { top: 45px; left: 10px; }
+
+}
 
 
 
@@ -95,27 +121,15 @@ Breakpoints
 Responsive
 
 ----------------------------------------------------------------------------- */
-.first        { top: -85px; }
-.logo         { top: 100px; left: 15px;  }
 
-.frameWrapper { top: -150px; }
 
 /*
 Breakpoints
 
 ----------------------------------------------------------------------------- */
 @media only screen and (max-width: 992px) {
-    .frameWrapper   { top: -80px; }
-    .third          { background-position: top left -100px; }
+
 }
 @media only screen and (max-width: 768px) {
-    .first          { top: -130px; }
-    .logo           { top: 140px; left: 10px;  }
-
-    .frameWrapper   { top: 44px; }
-
-    .third          { background-position: top left -200px; }
-}
-@media only screen and (max-width: 480px) {
 
 }
