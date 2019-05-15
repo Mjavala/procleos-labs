@@ -79,9 +79,10 @@ Breakpoints
 }
 
 
+/* Mobile screen */
 @media only screen and (max-width: 480px) {
 
-    .first  { flex-basis: 35%; top: -35px; }
+    .first  { flex-basis: 35%; top: -40px; }
     .second { flex-basis: 30%; }
     .third  { flex-basis: 35%; }
 
@@ -92,9 +93,7 @@ Breakpoints
 
 
     .frameWrapperMobile {
-        width: 100%;
-        max-width: 360px;
-        min-width: 320px;
+        width: 375px;
         position: absolute;
 
         left: 50%;
@@ -102,10 +101,41 @@ Breakpoints
     }
 
     .frameWrapper           { display: none; }
-    .frameWrapperMobile     { display: block; }
+    .frameWrapperMobile     { display: block; top: -15px; transition: all 0.5s ease; }
 
-    .logo { top: 45px; left: 10px; }
 
+    .logo { top: 50px; left: 10px; }
+}
+
+
+
+
+/* Small mobile screen */
+@media only screen and (max-width: 360px) {
+
+    .first  { flex-basis: 35%; top: -40px; }
+    .second { flex-basis: 30%; }
+    .third  { flex-basis: 35%; }
+
+
+    .first  { background-image: url("../images/MobileSkyline.svg"); }
+    .second {}
+    .third  { background-image: url("../images/MobileGround.svg"); }
+
+
+    .frameWrapperMobile {
+        width: 360px;
+        position: absolute;
+
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .frameWrapper           { display: none; }
+    .frameWrapperMobile     { display: block; top: -20px; transition: all 0.5s ease; }
+
+
+    .logo { top: 50px; left: 10px; }
 }
 
 
