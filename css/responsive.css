@@ -6,7 +6,7 @@ body {
 
 /* Full height viewport. */
 body { height: 100vh; width: 100vw; }
-img  { width: 100%; }
+img  { width: 100%; height: auto; }
 
 .first, .second, .third { transition: all 0.5s ease; }
 
@@ -21,11 +21,11 @@ img  { width: 100%; }
     flex-direction: column;
 }
 .first {
-    flex-basis: 30%;
+    flex-basis: 35%; top: -65px;
     position: relative;
 }
 .second {
-    flex-basis: 35%;
+    flex-basis: 30%;
     position: relative;
 }
 .third {
@@ -58,7 +58,7 @@ Wrappers
     transform: translate(-50%);
 }
 
-.frameWrapper       { display: block; }
+.frameWrapper       { display: block; top: -120px; transition: all 0.5s ease; }
 .frameWrapperMobile { display: none; }
 /*
 Elements
@@ -67,17 +67,43 @@ Elements
 .logo {
     position: relative;
     width: 60px;
+    top: 80px;
+    left: 15px;
 }
+
+
+
 /*
 Breakpoints
 
 ----------------------------------------------------------------------------- */
-@media only screen and (max-width: 992px) {}
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
+    .third { background-position: top left -200px; }
+    .frameWrapper {
+        width: 768px;
+        top: -46px;
+    }
 }
 
 
+
+
+
+
+
+
+/*
+Tablet Breakpoints
+
+----------------------------------------------------------------------------- */
+
+
+
+/*
+Mobile Breakpoints
+
+----------------------------------------------------------------------------- */
 /* Mobile screen */
 @media only screen and (max-width: 479px) {
 
@@ -139,8 +165,9 @@ Breakpoints
 
 
 
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Landscape */
-@media only screen and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .first  { flex-basis: 30%; top: -20px; }
     .second { flex-basis: 35%; }
     .third  { flex-basis: 35%; }
@@ -161,8 +188,5 @@ Breakpoints
     .frameWrapper       { display: block; top: -43px; transition: all 0.5s ease; }
     .frameWrapperMobile { display: none; }
 
-
-
     .logo { width: 35px; top: 30px; left: 10px; }
-
 }
