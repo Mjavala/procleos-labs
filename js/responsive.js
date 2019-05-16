@@ -26,8 +26,18 @@ function responsiveFrameMobile() {
 *                          JavaScript FUNCTION CALLS
 *
 *******************************************************************************/
+let resizeTimer;
+
 responsiveFrame();
-window.addEventListener('resize', responsiveFrame);
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+        responsiveFrame();
+    }, 100);
+});
+
+
+
 
 responsiveFrameMobile();
 window.addEventListener('resize', responsiveFrameMobile);

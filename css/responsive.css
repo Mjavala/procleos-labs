@@ -89,10 +89,7 @@ Breakpoints
 @media only screen and (max-width: 1024px) {
 
     .third { background-position: top left -200px; }
-    .frameWrapper {
-        width: 768px;
-        top: 0px;
-    }
+    .frameWrapper { width: 768px; }
     .cloud1 {
         width: 180px;
         top: -30px;
