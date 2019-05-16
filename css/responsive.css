@@ -6,7 +6,7 @@ body {
 
 /* Full height viewport. */
 body { height: 100vh; width: 100vw; }
-img  { max-width: 100%; height: auto; }
+img  { width: 100%; height: auto; }
 
 .first, .second, .third { transition: all 0.5s ease; }
 
@@ -58,7 +58,7 @@ Wrappers
     transform: translate(-50%);
 }
 
-.frameWrapper       { display: block; top: -116px; transition: all 0.5s ease; }
+.frameWrapper       { display: block; top: 0px; transition: all 0.5s ease; }
 .frameWrapperMobile { display: none; }
 /*
 Elements
@@ -76,6 +76,8 @@ Elements
     top: -50px;
     z-index: 3;
 
+    width: 262px;
+
     display: block;
 }
 
@@ -89,7 +91,7 @@ Breakpoints
     .third { background-position: top left -200px; }
     .frameWrapper {
         width: 768px;
-        top: -38px;
+        top: 0px;
     }
     .cloud1 {
         width: 180px;
@@ -119,47 +121,8 @@ Mobile Breakpoints
 /* Mobile screen */
 @media only screen and (max-width: 480px) {
 
+    .first  { top: -40px; }
     .third { background-position: top left; }
-
-    .first  { flex-basis: 35%; top: -40px; }
-    .second { flex-basis: 30%; }
-    .third  { flex-basis: 35%; }
-
-
-    .first  { background-image: url("../images/MobileSkyline.svg"); }
-    .second {}
-    .third  { background-image: url("../images/MobileGround.svg"); }
-
-
-    .frameWrapperMobile {
-        width: 375px;
-        position: absolute;
-
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-    .frameWrapper           { display: none; }
-    .frameWrapperMobile     { display: block; top: 20px; transition: all 0.5s ease; }
-
-
-    .logo { top: 50px; left: 10px; }
-    .cloud1 {display: none; }
-}
-
-
-/* Super small mobile screen */
-@media only screen and (max-width: 376px) {
-    .frameWrapperMobile     { display: block; top: -8px; transition: all 0.5s ease; }
-}
-
-
-/* Super small mobile screen */
-@media only screen and (max-width: 360px) {
-
-    .first  { flex-basis: 35%; top: -40px; }
-    .second { flex-basis: 30%; }
-    .third  { flex-basis: 35%; }
 
 
     .first  { background-image: url("../images/MobileSkyline.svg"); }
@@ -176,11 +139,14 @@ Mobile Breakpoints
     }
 
     .frameWrapper           { display: none; }
-    .frameWrapperMobile     { display: block; top: -40px; transition: all 0.5s ease; }
+    .frameWrapperMobile     { display: block; top: 0px; transition: all 0.5s ease; }
 
 
-    .logo { top: 50px; left: 10px; }
+    .logo   { top: 50px; left: 10px; }
+    .cloud1 { display: none; }
 }
+
+
 
 
 
