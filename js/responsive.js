@@ -21,7 +21,7 @@ function responsiveFrame() {
 
         // Fixed for Mobile Landscape
         if (thirdClientHeight < 150) {
-            frameWrapper.style.top = diff + 32 + 'px';
+            frameWrapper.style.top = diff + 36 + 'px';
         } else {
             frameWrapper.style.top = diff + 66 + 'px';
         }
