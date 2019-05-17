@@ -7,8 +7,33 @@
 function responsiveFrame() {
     let frameWrapper = document.querySelector('.frameWrapper');
     let second = document.querySelector('.second');
-    diff = frameWrapper.clientHeight - second.clientHeight
-    frameWrapper.style.top = -diff + 64 + 'px';
+
+    let frameWrapperClientHeight = frameWrapper.clientHeight;
+    let secondClientHeight = second.clientHeight;
+
+
+    // Landscape screen.
+    if (frameWrapperClientHeight >= secondClientHeight) {
+        let diff = secondClientHeight - frameWrapperClientHeight;
+        console.log(diff);
+        frameWrapper.style.top = diff + 66 + 'px';
+
+    } else {
+        let third = document.querySelector('.third');
+        let thirdClientHeight = third.clientHeight;
+
+        // Portrait screen.
+        let diff = secondClientHeight - frameWrapperClientHeight;
+
+        // Fixed iPad Pro.
+        if (thirdClientHeight > 450) {
+            frameWrapper.style.top = diff + 80 + 'px';
+        } else {
+            frameWrapper.style.top = diff + 66 + 'px';
+        }
+
+
+    }
 }
 
 function responsiveFrameMobile() {
@@ -16,7 +41,7 @@ function responsiveFrameMobile() {
     let second = document.querySelector('.second');
     diff = frameWrapperMobile.clientHeight - second.clientHeight;
     let third = document.querySelector('.third');
-    frameWrapperMobile.style.top = -diff + 26 + 'px';
+    frameWrapperMobile.style.top = -diff + 'px';
 }
 
 
@@ -26,18 +51,11 @@ function responsiveFrameMobile() {
 *                          JavaScript FUNCTION CALLS
 *
 *******************************************************************************/
-let resizeTimer;
-
-responsiveFrame();
-window.addEventListener('resize', function() {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(function() {
-        responsiveFrame();
-    }, 100);
-});
-
-
-
-
-responsiveFrameMobile();
+window.addEventListener('resize', responsiveFrame);
 window.addEventListener('resize', responsiveFrameMobile);
+
+
+window.onload = function() {
+    responsiveFrame();
+    responsiveFrameMobile();
+};
