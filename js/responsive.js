@@ -41,9 +41,13 @@ function responsiveFrame() {
 function responsiveFrameMobile() {
     let frameWrapperMobile = document.querySelector('.frameWrapperMobile');
     let second = document.querySelector('.second');
-    diff = frameWrapperMobile.clientHeight - second.clientHeight;
-    let third = document.querySelector('.third');
-    frameWrapperMobile.style.top = -diff + 'px';
+
+    let frameWrapperMobileClientHeight = frameWrapperMobile.clientHeight;
+    let secondClientHeight = second.clientHeight;
+
+    let diff = secondClientHeight - frameWrapperMobileClientHeight;
+
+    frameWrapperMobile.style.top = diff + 26 + 'px';
 }
 
 
