@@ -60,7 +60,7 @@ Elements
 
 ----------------------------------------------------------------------------- */
 .logo   { position: relative; }
-.cloud1 { position: absolute; z-index: 3; display: block; }
+
 
 
 
@@ -115,41 +115,71 @@ Elements
 
 ----------------------------------------------------------------------------- */
 
+
+
+
+.first            { top: -68px; }
+
+.frameWrapper     { width: 990px; top: 0; }
+
+.logo             { width: 60px; top: 85px; left: 15px; }
+
+
+
+
+
+@media only screen and (max-width: 1024px) and (min-height: 481px) and (max-height: 600px) {
+    .frameWrapper { width: 768px; }
+
+    .logo         { width: 40px; top: 75px; left: 10px; }
+}
+
+
+
+@media only screen and (max-width: 768px) and (min-height: 481px) and (max-height: 600px) {
+    .frameWrapper { width: 540px; }
+
+    .logo         { width: 40px; top: 75px; left: 10px; }
+}
+
+
+
+
+
+
+
 /*
 Landscape
 
 ----------------------------------------------------------------------------- */
-.first            { top: -72px; }
-
-.frameWrapper     { width: 990px; top: 0; }
-.logo             { width: 60px; top: 87px; left: 15px; }
-.cloud1           { width: 200px; top: -50px; right: 50px; }
-
-@media only screen and (max-width: 1024px) {
-    .frameWrapper { width: 768px; }
-    .cloud1       { width: 160px; top: -30px; right: 20px; }
-}
-
-
-
-
-
 
 /* Mobile Landscape */
-@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
-    .first  { flex-basis: 30%; top: -20px; }
-    .second { flex-basis: 35%; }
-    .third  { flex-basis: 35%; }
 
-    .frameWrapper { width: 460px; }
-    .cloud1       { width: 80px; top: 0px; right: 20px; }
-    .logo         { width: 30px; top: 25px; left: 5px; }
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+@media only screen and (min-width: 414px) and (max-width: 736px) and (min-height: 414px) and (max-height: 600px) and (orientation: landscape) {
+    .first        { top: -35px; }
+
+    .frameWrapper { width: 560px; }
+    .logo         { width: 40px; top: 45px; left: 10px; }
 }
 
 
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen and (min-width: 375px) and (max-width: 667px) and (min-height: 375px) and (orientation: landscape) {
+    .first        { top: -30px; }
+
+    .frameWrapper { width: 500px; }
+    .logo         { width: 40px; top: 40px; left: 10px; }
+}
 
 
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen and (min-width: 320px) and (max-width: 568px) and (min-height: 320px) and (orientation: landscape) {
+    .first        { top: -30px; }
 
+    .frameWrapper { width: 460px; }
+    .logo         { width: 30px; top: 35px; left: 5px; }
+}
 
 
 /*
@@ -180,5 +210,4 @@ Portrait
 
 
     .logo   { width: 60px; top: 50px; left: 10px; }
-    .cloud1 { display: none; }
 }

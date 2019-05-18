@@ -15,25 +15,33 @@ function responsiveFrame() {
     let thirdClientHeight = third.clientHeight;
 
 
-    // Landscape screen.
     if (frameWrapperClientHeight >= secondClientHeight) {
         let diff = secondClientHeight - frameWrapperClientHeight;
 
         // Fixed for Mobile Landscape
         if (thirdClientHeight < 150) {
             frameWrapper.style.top = diff + 36 + 'px';
-        } else {
+        }
+        else if (thirdClientHeight < 240) {
+            frameWrapper.style.top = diff + 46 + 'px';
+        }
+        else {
             frameWrapper.style.top = diff + 66 + 'px';
         }
-    }
-    // Portrait screen.
-    else {
+    } else {
+
         let diff = secondClientHeight - frameWrapperClientHeight;
         // Fixed iPad Pro.
         if (thirdClientHeight > 450) {
             frameWrapper.style.top = diff + 80 + 'px';
-        } else {
-            frameWrapper.style.top = diff + 66 + 'px';
+        }
+        else if (thirdClientHeight < 240) {
+            frameWrapper.style.top = diff + 46 + 'px';
+
+        }
+        else {
+            frameWrapper.style.top = diff + 6 + 'px';
+
         }
     }
 }
@@ -47,7 +55,7 @@ function responsiveFrameMobile() {
 
     let diff = secondClientHeight - frameWrapperMobileClientHeight;
 
-    frameWrapperMobile.style.top = diff + 26 + 'px';
+    frameWrapperMobile.style.top = diff + 24 +  'px';
 }
 
 
