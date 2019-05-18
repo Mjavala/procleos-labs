@@ -3,6 +3,7 @@ body {
     padding: 0;
     background: #01B4FD;
     transition: all 0.2s ease;
+    font-size: 16px;
 }
 
 /* Full height viewport. */
@@ -75,40 +76,6 @@ Elements
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* -----------------------------------------------------------------------------
 
                                 RESPONSIVE
@@ -116,11 +83,9 @@ Elements
 ----------------------------------------------------------------------------- */
 
 
-
-
 .first            { top: -68px; }
 
-.frameWrapper     { width: 990px; top: 0; }
+.frameWrapper     { width: 990px; top: -120px; }
 
 .logo             { width: 60px; top: 85px; left: 15px; }
 
@@ -129,7 +94,7 @@ Elements
 
 
 @media only screen and (max-width: 1024px) and (min-height: 481px) and (max-height: 600px) {
-    .frameWrapper { width: 768px; }
+    .frameWrapper { width: 768px; top: -100px; }
 
     .logo         { width: 40px; top: 75px; left: 10px; }
 }
@@ -137,7 +102,7 @@ Elements
 
 
 @media only screen and (max-width: 768px) and (min-height: 481px) and (max-height: 600px) {
-    .frameWrapper { width: 540px; }
+    .frameWrapper { width: 540px; top: -30px; }
 
     .logo         { width: 40px; top: 75px; left: 10px; }
 }
@@ -159,7 +124,7 @@ Landscape
 @media only screen and (min-width: 414px) and (max-width: 736px) and (min-height: 414px) and (max-height: 600px) and (orientation: landscape) {
     .first        { top: -35px; }
 
-    .frameWrapper { width: 560px; }
+    .frameWrapper { width: 560px; top: -70px; }
     .logo         { width: 40px; top: 45px; left: 10px; }
 }
 
@@ -168,7 +133,7 @@ Landscape
 @media only screen and (min-width: 375px) and (max-width: 667px) and (min-height: 375px) and (orientation: landscape) {
     .first        { top: -30px; }
 
-    .frameWrapper { width: 500px; }
+    .frameWrapper { width: 500px; top: -58px; }
     .logo         { width: 40px; top: 40px; left: 10px; }
 }
 
@@ -177,9 +142,14 @@ Landscape
 @media only screen and (min-width: 320px) and (max-width: 568px) and (min-height: 320px) and (orientation: landscape) {
     .first        { top: -30px; }
 
-    .frameWrapper { width: 460px; }
+    .frameWrapper { width: 460px; top: -58px; }
     .logo         { width: 30px; top: 35px; left: 5px; }
 }
+
+
+
+
+
 
 
 /*
@@ -187,8 +157,17 @@ Portrait
 
 ----------------------------------------------------------------------------- */
 
-/* Mobile Portrait */
-@media only screen and (max-width: 480px) {
+
+
+/*
+
+Tablet Portrait
+
+
+------------------------------------------------------------------------------*/
+
+
+@media only screen and (min-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     .first  { top: -40px; }
 
     .first  { background-image: url("../images/MobileSkyline.svg"); }
@@ -199,15 +178,82 @@ Portrait
     .frameWrapper           { display: none; }
     .frameWrapperMobile     { display: block; }
 
-    .frameWrapperMobile {
-        width: 360px;
-        position: absolute;
 
-        top: 0px;
+
+    .frameWrapperMobile {
+        width: 640px;
+
+        top: -60px;
+        position: absolute;
         left: 50%;
         transform: translate(-50%);
     }
 
+    .logo   { width: 80px; top: 55px; left: 15px; }
+}
 
-    .logo   { width: 60px; top: 50px; left: 10px; }
+
+
+/*
+
+Mobile Portrait
+
+
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-height: 830px) and (orientation: portrait) {
+    .first  { top: -40px; }
+
+    .first  { background-image: url("../images/MobileSkyline.svg"); }
+    .second {}
+    .third  { background-image: url("../images/MobileGround.svg"); }
+
+
+    .frameWrapper           { display: none; }
+    .frameWrapperMobile     { display: block; }
+
+
+
+    .frameWrapperMobile {
+        width: 360px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .logo   { width: 60px; top: 55px; left: 15px; }
+}
+
+
+
+
+/* ----------- iPhone X, Pixel 2 XL ----------- */
+@media only screen and (min-width: 375px) and (max-height: 830px) and (orientation: portrait) {
+    .frameWrapperMobile {
+        width: 360px;
+        top: 42px;
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+@media only screen and (min-width: 400px) and (max-height: 736px) and (orientation: portrait) {
+    .frameWrapperMobile {
+        width: 360px;
+        top: 14px;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen and (min-width: 360px) and (max-height: 668px) and (orientation: portrait) {
+    .frameWrapperMobile {
+        width: 360px;
+        top: -8px;
+    }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: portrait) {
+    .frameWrapperMobile {
+        width: 360px;
+        top: -40px;
+    }
 }
